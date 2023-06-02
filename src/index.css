@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Space Grotesk;
+  }
+}
+
+.nav {
+  @apply after:absolute after:left-0 after:bottom-0 after:duration-300 after:h-1 after:bg-violet-700 after:w-0 hover:after:w-full;
+}
+
+.text-hover {
+  @apply after:absolute after:left-0 after:bottom-0 after:duration-300 after:h-full after:bg-neutral-950 after:w-0 hover:after:w-[120%] after:hover:text-[#f2f2f2];
+}
+
+.section-wrapper {
+  @apply w-full  h-full lg:pt-[110px] flex flex-col px-28 pb-10 text-neutral-950;
+}
+
+.input {
+  @apply w-full h-10 border border-[#f2f2f2] outline-none px-2 bg-neutral-900 shadow-[#f2f2f2] shadow-[3px_4px_0_0] focus:translate-y-1 focus:translate-x-[1px] focus:shadow-[1px_2px_0_0] transition-all ease-in-out duration-100;
+}
