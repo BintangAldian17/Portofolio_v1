@@ -11,8 +11,8 @@ const Contact = ({ contact }) => {
             <div className="  text-xl font-bold relative after:absolute after:text-[#f2f2f2] after:content-['Contact']  after:bottom-[3px] after:text-3xl lg:after:text-5xl ">
               <h1 className=" text-violet-600 text-3xl lg:text-5xl">Contact</h1>
             </div>
-            <div className="  text-xl font-bold relative after:absolute after:text-[#f2f2f2] after:content-['Us.']  after:bottom-[3px] after:text-3xl lg:after:text-5xl ">
-              <h1 className=" text-violet-600 text-3xl lg:text-5xl">Us.</h1>
+            <div className="  text-xl font-bold relative after:absolute after:text-[#f2f2f2] after:content-['Me.']  after:bottom-[3px] after:text-3xl lg:after:text-5xl ">
+              <h1 className=" text-violet-600 text-3xl lg:text-5xl">Me.</h1>
             </div>
           </div>
           <div className=" w-full h-full flex items-center justify-center px-16">
