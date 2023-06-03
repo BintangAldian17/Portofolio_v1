@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 // eslint-disable-next-line react/prop-types
-const Navbar = ({ hero, contact }) => {
+const Navbar = ({ hero, contact, portofolio, about }) => {
   const [isScroll, setIsScroll] = useState(false);
 
   const scrollSection = (elementRef) => {
@@ -15,9 +15,9 @@ const Navbar = ({ hero, contact }) => {
       <nav
         className={`${
           isScroll ? " bg-neutral-950" : ""
-        } w-full h-full  flex justify-between items-center lg:px-16 px-9 `}>
-        <div className=" relative after:content-['B!'] after:absolute after:bottom-[3px] after:lg:text-5xl after:text-[42px] after:font-semibold border-[3px] border-neutral-950 shadow-[3px_4px_0_0] shadow-violet-700  hover:shadow-[1px_1px_0_0] transition-all  ease-out duration-150 hover:translate-y-1 hover:translate-x-[1px] cursor-pointer">
-          <h1 className=" lg:text-5xl text-[42px] text-violet-600 font-bold">B!</h1>
+        } w-full h-full  flex justify-between items-center lg:px-16 px-9`}>
+        <div className=" relative after:content-['B!'] after:absolute after:bottom-[3px] after:lg:text-5xl after:text-[30px] after:font-semibold border-[3px] border-neutral-950 shadow-[3px_4px_0_0] shadow-violet-700  lg:hover:shadow-[1px_1px_0_0] transition-all  ease-out duration-150 hover:translate-y-1 lg:hover:translate-x-[1px] cursor-pointer px-3 lg:px-0">
+          <h1 className=" lg:text-5xl text-[30px] text-violet-600 font-bold">B!</h1>
         </div>
         <div className=" lg:flex justify-center items-center gap-x-7 text-xl font-bold transition-all ease-in-out duration-300 hidden h-full border-r-[3px] border-l-[3px] border-neutral-950">
           <span className=" cursor-pointer  px-8 flex items-center border-neutral-900 w-full h-full">
@@ -25,10 +25,14 @@ const Navbar = ({ hero, contact }) => {
               Home
             </h2>
           </span>
-          <span className=" cursor-pointer  px-8 flex items-center border-neutral-900 w-full h-full">
+          <span
+            className=" cursor-pointer  px-8 flex items-center border-neutral-900 w-full h-full"
+            onClick={() => scrollSection(about)}>
             <h2 className="nav relative">About</h2>
           </span>
-          <span className=" cursor-pointer  px-8 flex items-center border-neutral-900 w-full h-full">
+          <span
+            className=" cursor-pointer  px-8 flex items-center border-neutral-900 w-full h-full"
+            onClick={() => scrollSection(portofolio)}>
             <h2 className="nav relative">Project</h2>
           </span>
           <span

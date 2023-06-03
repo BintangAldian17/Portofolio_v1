@@ -1,28 +1,27 @@
 import { forwardRef } from "react";
-import me from "../assets/test.png";
 
 // eslint-disable-next-line react/prop-types
 const Hero = ({ hero }) => {
   return (
-    <div className=" w-full h-full lg:h-screen md:pb-20 pb-10" ref={hero}>
-      <div className=" bg-[#f2f2f2] section-wrapper">
+    <div className=" w-full h-screen md:pb-20 pb-16" ref={hero}>
+      <div className=" bg-[#f2f2f2] section-wrapper lg:pt-[110px] pt-20">
         <div className=" w-full h-full flex justify-center items-center border-neutral-950 border-[3px] shadow-[7px_9px_0_0] shadow-neutral-950 px-4">
-          <div className=" h-full flex items-start justify-center flex-col lg:w-[70%] w-full ">
+          <div className=" h-full flex items-start justify-center flex-col lg:w-[70%] w-full lg:py-0 py-16">
             <h1
-              className={` md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight after:content-["I'M"] text-hover relative`}>
+              className={` md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight lg:after:content-["I'M"] text-hover relative`}>
               I'M
             </h1>
-            <h1 className=" md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight after:content-['BINTANG'] text-hover relative">
+            <h1 className=" md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight lg:after:content-['BINTANG'] text-hover relative">
               BINTANG
             </h1>
-            <h1 className=" md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight after:content-['ALDIAN'] text-hover relative">
+            <h1 className=" md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight lg:after:content-['ALDIAN'] text-hover relative">
               ALDIAN
             </h1>
             <h1
-              className={` md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight after:content-[] text-hover relative`}>
+              className={` md:text-[80px] text-[50px] font-Geologica font-extrabold leading-none tracking-tight lg:after:content-[] text-hover relative`}>
               WEB DEVELOPER
             </h1>
-            <p className=" md:text-lg text-sm font-Geologica pt-6 md:pt-0">
+            <p className=" md:text-lg text-xs font-Geologica pt-6 md:pt-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates beatae, quaerat, vero,
               consequatur iusto dignissimos quam eum voluptatem laudantium libero
             </p>
@@ -59,4 +58,4 @@ const Hero = ({ hero }) => {
   );
 };
 
-export default forwardRef(Hero);
+export default Hero;
