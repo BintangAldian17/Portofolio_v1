@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import SideBar from "./SideBar";
 import { useScroll } from "../utils/useScroll";
-import resume from "../assets/resume_Bintang_Aldian.pdf";
+import resume from "../assets/Muhammad_Bintang Aldiansyah_Resume_.pdf";
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ hero, contact, portofolio, about }) => {

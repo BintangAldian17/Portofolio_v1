@@ -1,4 +1,4 @@
-import resume from "../assets/resume_Bintang_Aldian.pdf";
+import resume from "../assets/Muhammad_Bintang Aldiansyah_Resume_.pdf";
 
 const SideBar = ({ open, hero, contact, portofolio, about, scrollSection, handleClose }) => {
   return (
