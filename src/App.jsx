@@ -13,7 +13,7 @@ function App() {
   const hero = useRef();
 
   return (
-    <div className=" bg-dark w-full h-full overflow-y-auto">
+    <div className=" bg-[url('./assets/BackGround.png')] w-full h-full overflow-y-auto">
       <Navbar hero={hero} contact={contact} portofolio={portofolio} about={about} />
       <Hero hero={hero} />
       <About about={about} />
