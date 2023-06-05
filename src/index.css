@@ -21,5 +21,28 @@
 }
 
 .input {
-  @apply w-full h-10 border border-[#f2f2f2] outline-none px-2 bg-neutral-900 shadow-[#f2f2f2] shadow-[3px_4px_0_0] focus:translate-y-1 focus:translate-x-[1px] focus:shadow-[1px_2px_0_0] transition-all ease-in-out duration-100;
+  @apply w-full h-10 border outline-none px-2 bg-neutral-900 shadow-[3px_4px_0_0] focus:translate-y-1 focus:translate-x-[1px] focus:shadow-[1px_2px_0_0] transition-all ease-in-out duration-100;
+}
+
+.text-stroke {
+  text-shadow: -1px -1px 0 #6d28d9, 1px -1px 0 #6d28d9, -1px 1px 0 #6d28d9, 1px 1px 0 #6d28d9;
+}
+
+.text-stroke::after {
+  content: "WEB " " DEVELOPER";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  color: #6d28d9;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
 }

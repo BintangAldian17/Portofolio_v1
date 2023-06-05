@@ -2,18 +2,64 @@
   "card": [
     {
       "id": 1,
-      "img": "../../public/img/project4.png",
-      "desc": "#FabiraMovie"
+      "img": "../../img/project4.png",
+      "desc": "#FabiraMovie",
+      "link": "https://fabiramovies.vercel.app",
+      "git": "https://github.com/MasAnton/Final_project_kelompok-8"
     },
     {
-      "id": 1,
-      "img": "../../public/img/project2.png",
-      "desc": "#Todo"
+      "id": 2,
+      "img": "../../img/project2.png",
+      "desc": "#Todo",
+      "link": "https://todo-list-idc958vaq-bintangaldian17.vercel.app",
+      "git": "https://github.com/BintangAldian17/Todos-App"
     },
     {
+      "id": 3,
+      "img": ".../../img/project3.png",
+      "desc": "#MultiStep",
+      "link": "https://fabiramovies.vercel.app",
+      "git": "https://github.com/BintangAldian17/Sosmed_app"
+    }
+  ],
+  "animation": [
+    {
       "id": 1,
-      "img": ".../../public/img/project3.png",
-      "desc": "#MultiStep"
+      "text": "I'M",
+      "color": "yellow-300"
+    },
+    {
+      "id": 2,
+      "text": "BINTANG",
+      "color": "rose-600"
+    },
+    {
+      "id": 3,
+      "text": "ALDIAN",
+      "color": "blue-700"
+    },
+    {
+      "id": 4,
+      "text": "WEB DEVELOPER",
+      "color": "sky-300"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "value": "firstname"
+    },
+    {
+      "id": 2,
+      "value": "lastname"
+    },
+    {
+      "id": 3,
+      "value": "email"
+    },
+    {
+      "id": 4,
+      "value": "subject"
     }
   ]
 }

@@ -1,8 +1,7 @@
 import { FaReact } from "react-icons/fa";
-import { SiReactquery, SiTailwindcss } from "react-icons/si";
+import { SiReactquery, SiTailwindcss, SiMysql, SiSequelize, SiJavascript } from "react-icons/si";
 import { IoLogoNodejs, IoLogoJavascript } from "react-icons/io";
 import profile from "../assets/test.png";
-import { forwardRef } from "react";
 
 const About = ({ about }) => {
   return (
@@ -23,13 +22,53 @@ const About = ({ about }) => {
                 <img src={profile} alt="profile_image" className=" w-full h-full object-cover" />
               </div>
             </div>
-            <div className=" w-full h-full text-[#f2f2f2] flex items-center lg:pr-16 lg:text-justify lg:text-lg text-sm border-2 border-[#f2f2f2] shadow-[#f2f2f2] shadow-[5px_7px_0_0] lg:border-none lg:shadow-none px-5 text-center py-4 lg:px-0 lg:py-0">
+            <div className=" w-full h-full text-[#f2f2f2] flex items-center lg:pr-16 lg:text-justify lg:text-base text-xs border-2 border-[#f2f2f2] shadow-[#f2f2f2] shadow-[5px_7px_0_0] lg:border-none lg:shadow-none px-5 text-center py-4 lg:px-0 lg:py-0 flex-col gap-y-3">
               <h1>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius inventore, corporis expedita eos
-                voluptatem quaerat. Suscipit exercitationem rerum natus! Exercitationem repellat, ipsum corrupti qui
-                asperiores commodi in voluptate ratione beatae? Libero dolorem perferendis quod nobis reiciendis sed
-                eius quae porro! Ipsam, sunt incidunt! Autem nesciunt labore sapiente! Nesciunt, repellat.
+                Hello, I'm <span className=" text-violet-700">Bintang Aldian,</span> an experienced and dedicated web
+                developer. I specialize in creating exceptional websites with innovative user experiences. With
+                expertise Javascript languages and frameworks, I handle both front-end and back-end development
+                proficiently. I excel at solving complex coding challenges and staying updated with the latest industry
+                trends. My designs are visually captivating and provide intuitive browsing experiences. Collaboration is
+                crucial to my work. Continuous learning and self-improvement drive me to adapt quickly and exceed client
+                expectations.
               </h1>
+              <div className=" flex flex-col items-start justify-start w-full gap-y-3">
+                <h1 className=" md:text-3xl text-xl font-bold text-[#f2f2f2]">My Skills</h1>
+                <div className="  flex-wrap gap-x-6 gap-y-5 grid grid-cols-3 lg:grid-flow-col-dense lg:grid-rows-2 items-center justify-center">
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <FaReact className=" w-10 h-10" />
+                    <span>ReactJs</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <SiTailwindcss className=" w-10 h-10" />
+                    <span>Tailwind</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <SiReactquery className=" w-10 h-10" />
+                    <span>RQuery</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <IoLogoJavascript className=" w-10 h-10" />
+                    <span>Javascript</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <IoLogoNodejs className=" w-10 h-10" />
+                    <span>NodeJs</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <SiMysql className=" w-10 h-10" />
+                    <span>MySQL</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <SiSequelize className=" w-10 h-10" />
+                    <span>Sequelize</span>
+                  </div>
+                  <div className=" w-full h-full shadow-[#f2f2f2] shadow-[2px_3px_0_0] flex flex-col items-center justify-center px-1">
+                    <SiJavascript className=" w-10 h-10 " />
+                    <span>ExpressJS</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

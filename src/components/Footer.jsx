@@ -5,21 +5,30 @@ const Footer = () => {
   return (
     <div className=" w-full lg:h-fit bg-[#f2f2f2] flex flex-col items-center justify-center gap-y-3 py-4">
       <div className=" w-full flex gap-x-4 items-center justify-center">
-        <div className="  w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950">
+        <a
+          className="  w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950 cursor-pointer"
+          href="https://www.instagram.com/ntaaang_"
+          target="blank">
           <FaInstagramSquare className=" w-full h-full text-neutral-950" />
-        </div>
+        </a>
         <div className=" w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950">
-          <AiFillFacebook className=" w-full h-full text-neutral-950" />
+          <AiFillFacebook className=" w-full h-full text-neutral-950 cursor-pointer" />
         </div>
-        <div className=" w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950">
-          <FaGithubSquare className=" w-full h-full text-neutral-950" />
-        </div>
-        <div className=" w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950">
-          <AiFillLinkedin className=" w-full h-full text-neutral-950" />
-        </div>
+        <a
+          className=" w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950"
+          href="https://github.com/BintangAldian17"
+          target="blank">
+          <FaGithubSquare className=" w-full h-full text-neutral-950 cursor-pointer" />
+        </a>
+        <a
+          className=" w-6 h-6 shadow-[2px_3px_0_0] shadow-neutral-950"
+          href="https://www.linkedin.com/in/bintang-aldian-139957252/"
+          target="blank">
+          <AiFillLinkedin className=" w-full h-full text-neutral-950 cursor-pointer" />
+        </a>
       </div>
-      <div className=" lg:w-[50%]">
-        <p className=" text-sm font-semibold text-center">
+      <div className=" lg:w-[50%] lg:px-0 px-5">
+        <p className=" lg:text-sm text-xs font-semibold text-center">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci non officia nam dolorem placeat? Quia
           voluptas atque ullam esse enim laborum,
         </p>
